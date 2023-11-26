@@ -1,0 +1,26 @@
+{% extends 'chat/base.html' %}
+
+{% block content %}
+    {% load static %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mt-4">Chat Room</h1>
+                <div class="col">
+                    <div id="chat-content" class="p-5"
+                         style="height: 80vh; overflow: auto; overflow-x: hidden; max-width: 100%; word-wrap: break-word;">
+                        {% for message in messages %}
+                            <p class="col bg-primary rounded-3 p-2 text-white">{{ message.sender }}: {{ message.message }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" id="chat-input" placeholder="Type your message...">
+                    <button class="btn btn-primary" id="chat-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/handle.message.js' %}"></script>
+{% endblock %}
+

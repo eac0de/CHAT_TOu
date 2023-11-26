@@ -1,0 +1,210 @@
+[
+  {
+    "model": "chat.user",
+    "pk": 1,
+    "fields": {
+      "username": "Egor",
+      "email": "egor2001zhukov@gmail.com",
+      "password": "123",
+      "date_joined": "2023-07-30T14:03:42.372Z",
+      "last_login": "2023-07-30T17:03:31Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "chat.user",
+    "pk": 2,
+    "fields": {
+      "username": "Yura",
+      "email": "yura2001shilov@gmail.com",
+      "password": "321",
+      "date_joined": "2023-07-30T14:04:27.704Z",
+      "last_login": "2023-07-30T14:04:23Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "chat.user",
+    "pk": 3,
+    "fields": {
+      "username": "Valera",
+      "email": "valera@gmail.com",
+      "password": "12345",
+      "date_joined": "2023-07-30T16:45:51.576Z",
+      "last_login": "2023-07-30T16:47:13Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "chat.user",
+    "pk": 4,
+    "fields": {
+      "username": "Alesya",
+      "email": "alesya@gmail.com",
+      "password": "351762",
+      "date_joined": "2023-07-30T17:30:55.764Z",
+      "last_login": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "chat.user",
+    "pk": 6,
+    "fields": {
+      "username": "Liza",
+      "email": "liza@gmail.com",
+      "password": "111",
+      "date_joined": "2023-07-31T07:55:07.440Z",
+      "last_login": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "chat.room",
+    "pk": 1,
+    "fields": {
+      "name": "Room #1",
+      "host": 1,
+      "description": "Main room for communication",
+      "users": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "chat.room",
+    "pk": 2,
+    "fields": {
+      "name": "Room #2",
+      "host": 2,
+      "description": "Second room",
+      "users": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 1,
+    "fields": {
+      "room": 1,
+      "message": "Hello, Yura!",
+      "sender": 1,
+      "send_at": "2023-07-30T15:27:21.629Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 2,
+    "fields": {
+      "room": 1,
+      "message": "What's up, bro!",
+      "sender": 2,
+      "send_at": "2023-07-30T15:27:21.629Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 60,
+    "fields": {
+      "room": 1,
+      "message": "я это сделал!!",
+      "sender": 4,
+      "send_at": "2023-08-02T08:02:35.303Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 61,
+    "fields": {
+      "room": 1,
+      "message": "hello",
+      "sender": 4,
+      "send_at": "2023-08-02T08:20:06.630Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 62,
+    "fields": {
+      "room": 1,
+      "message": "yegor",
+      "sender": 4,
+      "send_at": "2023-08-02T08:20:26.157Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 63,
+    "fields": {
+      "room": 1,
+      "message": "я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!я это сделал!!",
+      "sender": 4,
+      "send_at": "2023-08-02T08:41:49.701Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 64,
+    "fields": {
+      "room": 1,
+      "message": "rfr",
+      "sender": 1,
+      "send_at": "2023-08-02T08:42:15.956Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 65,
+    "fields": {
+      "room": 2,
+      "message": "hello",
+      "sender": 4,
+      "send_at": "2023-08-02T09:38:03.836Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 66,
+    "fields": {
+      "room": 2,
+      "message": "hi",
+      "sender": 1,
+      "send_at": "2023-08-02T09:38:21.775Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 67,
+    "fields": {
+      "room": 2,
+      "message": "egor",
+      "sender": 1,
+      "send_at": "2023-08-02T09:44:17.141Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 68,
+    "fields": {
+      "room": 1,
+      "message": "hello",
+      "sender": 4,
+      "send_at": "2023-08-03T08:39:42.230Z"
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 69,
+    "fields": {
+      "room": 1,
+      "message": "gogogogo",
+      "sender": 1,
+      "send_at": "2023-08-03T08:40:00.125Z"
+    }
+  }
+]
